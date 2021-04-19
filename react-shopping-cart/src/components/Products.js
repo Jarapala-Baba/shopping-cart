@@ -15,7 +15,7 @@ import formatCurrency from '../util';
                             </a>
                             <div className="product-price">
                                 <div>{formatCurrency((product.price)*74.47)}</div>
-                                <button className="button primary">Add To Cart</button>
+                                <button onClick={()=>this.props.addToCart(product)} className="button primary">Add To Cart</button>
                             </div>
                             
                         </div>
